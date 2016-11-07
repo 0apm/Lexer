@@ -1,0 +1,3 @@
+read x;
+//we found max of 2 vars (x and y)
+if x>y then max:=x else max:=y 

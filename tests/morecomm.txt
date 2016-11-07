@@ -1,0 +1,4 @@
+(*precond: 
+y!=0*)
+while x<=y
+do x:=x+5/y

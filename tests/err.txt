@@ -1,0 +1,2 @@
+sum:=a+>b;
+if sum>0 then write sum else skip
