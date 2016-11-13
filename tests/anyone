@@ -1,8 +1,0 @@
-read a1;
-read a2;
-x1:=(a1+b1)*(c1+d1);
-x2:=a2/b2+c2/d2;
-y:=(x1+x2)/2;
-if ((y>0) && (x1!=x2))
-then write y
-else skip
