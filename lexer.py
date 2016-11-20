@@ -60,7 +60,7 @@ def t_DIV(t):
     return t
 
 def t_OP(t):
-    r'([+|\-|%|<|>])|([=|\!]=)|([>|<]=)|(&&)|(\|\|)|[\*][\*]'
+    r'([>|<]=)|([+|\-|%|<|>])|([=|\!]=)|(&&)|(\|\|)|[\*][\*]'
     return t
 
 def t_MULT(t):
@@ -83,7 +83,7 @@ t_ignore = ' \t\r'
 
 # Error handling rule
 def t_error(t):
-    print("Illegal character '%s'" % t.value[0]*20)
+    print("Illegal character '%s'" % t.value[0])
     t.lexer.skip(1)
 
 # Build the lexer

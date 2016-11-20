@@ -73,6 +73,9 @@ def p_expression_parenthesis(p):
     p[0] = Node('EXP', ['(', p[2], p[3], p[4],')'])
     #p[0] = Node(p[2])
 
+def p_expression_parenthesisfix(p):
+    '''exp : exp operation exp'''
+    p[0] = Node('EXP', [p[1], p[2], p[3]])
 
 def p_operation_OP(p):
     '''operation : OP

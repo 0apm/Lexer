@@ -1,2 +1,2 @@
 read (**) x; //hellofdgd
-if (x > y) then max := (x*(2**x)) else max := (y / x)
+if x > y then max := x*(2**x) else max := y / x
